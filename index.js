@@ -7,16 +7,17 @@ element.addEventListener("mousemove", (e) => {
 });
 
 
+
 //OpenWeather API
+var apiKey = config.apiKey;
 let weather = {
-  apiKey: "ec3887fddff5f8a4ad177ca74853cc18",
 
   fetchWeather: function (city) {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
         "&units=metric&appid=" +
-        this.apiKey
+        apiKey
     )
       .then((response) => {
         if (!response.ok) {
