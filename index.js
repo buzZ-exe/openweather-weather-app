@@ -9,7 +9,7 @@ element.addEventListener("mousemove", (e) => {
 
 
 //OpenWeather API
-var apiKey = config.apiKey;
+var apiKey = "ec3887fddff5f8a4ad177ca74853cc18";
 let weather = {
 
   fetchWeather: function (city) {
